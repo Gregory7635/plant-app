@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Plant ID</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div th:replace="fragments/navbar :: body"></div>
+
+<div class="container mt-5">
+
+    <div class="text-center mb-4">
+        <h1>Определи растение по фото</h1>
+        <p class="text-muted">Загрузи изображение и получи результат</p>
+    </div>
+
+    <div class="card p-4 shadow-sm">
+        <form id="uploadForm">
+
+            <input
+                    class="form-control mb-3"
+                    type="file"
+                    name="file"
+                    id="fileInput"
+                    required>
+
+            <button class="btn btn-success w-100" type="submit">
+                Определить растение
+            </button>
+
+        </form>
+
+    </div>
+
+    <div id="loader" class="text-center mt-4 d-none">
+
+        <div class="spinner-border text-success" role="status">
+        </div>
+
+        <p class="mt-2">
+            Определяем растение...
+        </p>
+
+    </div>
+
+    <div id="result" class="mt-4"></div>
+
+    <div class="mt-5">
+
+        <h3 class="mb-3">Последние растения</h3>
+
+        <div class="row">
+
+            <div class="col-md-4 mb-3"
+                 th:each="plant : ${latestPlants}">
+
+                <div class="card shadow-sm p-3 h-100">
+
+                    <a style="text-decoration: none" th:href="@{'/plants/' + ${plant.id}}">
+                        <h5 th:text="${plant.name}"></h5>
+                    </a>
+
+                    <p class="text-muted"
+                       th:text="${#strings.abbreviate(plant.description, 120)}">
+                    </p>
+
+                    <a class="btn btn-outline-success btn-sm"
+                       th:href="@{'/plants/' + ${plant.id}}">
+                        Открыть
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+    document.getElementById("uploadForm")
+        .addEventListener("submit", async function (e) {
+
+            e.preventDefault();
+
+            const fileInput =
+                document.getElementById("fileInput");
+
+            const formData = new FormData();
+
+            formData.append("file", fileInput.files[0]);
+
+            document.getElementById("loader")
+                .classList.remove("d-none");
+
+            document.getElementById("result")
+                .innerHTML = "";
+
+            const response = await fetch("/api/identify", {
+
+                method: "POST",
+                body: formData
+
+            });
+
+            if (!response.ok) {
+
+                document.getElementById("loader")
+                    .classList.add("d-none");
+
+                document.getElementById("result").innerHTML = `
+
+        <div class="alert alert-danger">
+            Ошибка при определении растения
+        </div>
+
+    `;
+
+                return;
+            }
+
+            const data = await response.json();
+
+            document.getElementById("loader")
+                .classList.add("d-none");
+
+            document.getElementById("result").innerHTML = `
+
+        <div class="card shadow p-4">
+
+            <h2 class="text-success">
+                🌿 ${data.plant.name}
+            </h2>
+
+            <hr>
+
+            <p>
+                <b>Точность:</b>
+                ${(data.probability * 100).toFixed(2)}%
+            </p>
+
+            <p>
+                <b>Описание:</b><br>
+                ${data.plant.description}
+            </p>
+
+            <a class="btn btn-outline-primary"
+               href="${data.plant.wikipediaUrl}"
+               target="_blank">
+
+               Wikipedia
+
+            </a>
+
+        </div>
+
+    `;
+        });
+
+</script>
+</body>
+</html>
