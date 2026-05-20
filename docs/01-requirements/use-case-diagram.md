@@ -55,5 +55,3 @@ WikiAPI --> UC7
 Admin --> UC10
 @enduml
 ```
-
-> Скопируй код на [plantuml.com](https://www.plantuml.com/plantuml/uml/) → скачай PNG → сохрани как `docs/02-requirements/images/use-case-diagram.png`

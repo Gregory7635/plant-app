@@ -52,8 +52,6 @@ View --> User: страница с результатом
 @enduml
 ```
 
-> Сохрани PNG как `docs/05-design/images/seq-identify.png`
-
 ---
 
 ## 2. Регистрация пользователя
@@ -92,8 +90,6 @@ View --> User: страница входа
 @enduml
 ```
 
-> Сохрани PNG как `docs/05-design/images/seq-register.png`
-
 ---
 
 ## 3. Просмотр истории запросов
@@ -128,5 +124,3 @@ Ctrl --> View: model.addAttribute("history", ...)
 View --> User: таблица с историей
 @enduml
 ```
-
-> Сохрани PNG как `docs/05-design/images/seq-history.png`

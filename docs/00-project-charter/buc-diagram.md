@@ -46,5 +46,3 @@ Admin --> UC7
 Admin --> UC8
 @enduml
 ```
-
-> Скопируй код на [plantuml.com](https://www.plantuml.com/plantuml/uml/) → скачай PNG → сохрани как `docs/01-business-model/images/buc-diagram.png`

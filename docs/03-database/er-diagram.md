@@ -45,5 +45,3 @@ users ||--o{ identifications : "создаёт"
 plants ||--o{ identifications : "определяется в"
 @enduml
 ```
-
-> Скопируй код на [plantuml.com](https://www.plantuml.com/plantuml/uml/) → скачай PNG → сохрани как `docs/04-database/images/er-diagram.png`

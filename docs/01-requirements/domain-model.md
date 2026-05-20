@@ -59,5 +59,3 @@ Identification --> PlantIdService : использует
 Identification --> WikipediaService : обогащается
 @enduml
 ```
-
-> Скопируй код на [plantuml.com](https://www.plantuml.com/plantuml/uml/) → скачай PNG → сохрани как `docs/02-requirements/images/domain-model.png`

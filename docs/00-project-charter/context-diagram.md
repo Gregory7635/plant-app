@@ -41,5 +41,3 @@ A0 -down-> [Plant.id API]
 A0 -down-> [Wikipedia API]
 @enduml
 ```
-
-> Скопируй код выше на [plantuml.com](https://www.plantuml.com/plantuml/uml/), скачай PNG и сохрани как `docs/01-business-model/images/idef0-context.png`

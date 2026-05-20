@@ -93,5 +93,3 @@ Identification --> User
 Identification --> Plant
 @enduml
 ```
-
-> Скопируй код на [plantuml.com](https://www.plantuml.com/plantuml/uml/) → скачай PNG → сохрани как `docs/03-architecture/images/interfaces-diagram.png`
