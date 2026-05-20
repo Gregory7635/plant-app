@@ -298,16 +298,21 @@ mvn clean package
 
 # Документация по этапам
 
-| Этап | Описание |
+| Папка | Содержание |
 |---|---|
-| [01 — Бизнес-модель](docs/01-business-model/README.md) | IDEF0, BUC-диаграмма, глоссарий |
-| [02 — Требования](docs/02-requirements/README.md) | Use Case, Domain Model |
-| [03 — Архитектура](docs/03-architecture/README.md) | PCMEF-диаграмма, интерфейсы |
-| [04 — База данных](docs/04-database/README.md) | ER-диаграмма, DDL |
-| [05 — Проектирование](docs/05-design/README.md) | Sequence-диаграммы |
-| [06 — Реализация](docs/06-implementation/README.md) | Структура кода, тесты |
-| [07 — UI](docs/07-ui/README.md) | Скриншоты интерфейса |
-| [08 — Финал](docs/08-final/README.md) | Руководства, спецификация |
+| [00-project-charter](docs/00-project-charter/README.md) | IDEF0, BUC-диаграмма, SWOT, ROI, глоссарий |
+| [01-requirements](docs/01-requirements/README.md) | Use Case, Domain Model, спецификации |
+| [02-architecture](docs/02-architecture/README.md) | PCMEF-диаграмма, ADR, интерфейсы |
+| [03-database](docs/03-database/README.md) | ER-диаграмма, DDL-скрипт |
+| [04-detailed-design](docs/04-detailed-design/README.md) | Sequence-диаграммы |
+| [05-implementation](docs/05-implementation/README.md) | Структура кода, слои PCMEF |
+| [06-testing](docs/06-testing/README.md) | Тест-план, JaCoCo, покрытие |
+| [07-refactoring](docs/07-refactoring/README.md) | Data Mapper, Identity Map |
+| [08-ui](docs/08-ui/README.md) | Скриншоты интерфейса |
+| [09-api](docs/09-api/README.md) | OpenAPI, Swagger |
+| [10-deployment](docs/10-deployment/README.md) | Docker, руководство администратора |
+| [11-user-guide](docs/11-user-guide/README.md) | Руководство пользователя |
+| [12-final-report](docs/12-final-report/README.md) | Техническая спецификация, записка |
 
 ---
 
