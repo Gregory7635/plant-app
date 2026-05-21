@@ -4,6 +4,7 @@
 
 - [ER-диаграмма](er-diagram.md)
 - [DDL-скрипт](ddl.sql)
+- [ORM-маппинг (JPA / Hibernate)](orm-mapping.md)
 
 ## Описание схемы БД
 

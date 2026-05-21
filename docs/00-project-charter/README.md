@@ -4,6 +4,8 @@
 
 - [Контекстная диаграмма IDEF0](context-diagram.md)
 - [BUC-диаграмма](buc-diagram.md)
+- [SWOT-анализ](swot.md)
+- [ROI — Анализ окупаемости](roi.md)
 - [Глоссарий](glossary.md)
 
 ## Описание этапа

@@ -3,6 +3,7 @@
 ## Содержание
 
 - [Sequence-диаграммы](sequence-diagrams.md)
+- [Спецификация методов](method-specs.md)
 
 ## Описание
 

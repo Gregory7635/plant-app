@@ -308,21 +308,100 @@ mvn clean package
 
 # Документация по этапам
 
-| Папка | Содержание |
+## 00 — Бизнес-модель
+
+| Документ | Ссылка |
 |---|---|
-| [00-project-charter](docs/00-project-charter/README.md) | IDEF0, BUC-диаграмма, SWOT, ROI, глоссарий |
-| [01-requirements](docs/01-requirements/README.md) | Use Case, Domain Model, спецификации |
-| [02-architecture](docs/02-architecture/README.md) | PCMEF-диаграмма, ADR, интерфейсы |
-| [03-database](docs/03-database/README.md) | ER-диаграмма, DDL-скрипт |
-| [04-detailed-design](docs/04-detailed-design/README.md) | Sequence-диаграммы |
-| [05-implementation](docs/05-implementation/README.md) | Структура кода, слои PCMEF |
-| [06-testing](docs/06-testing/README.md) | Тест-план, JaCoCo, покрытие |
-| [07-refactoring](docs/07-refactoring/README.md) | Data Mapper, Identity Map |
-| [08-ui](docs/08-ui/README.md) | Скриншоты интерфейса |
-| [09-api](docs/09-api/README.md) | OpenAPI, Swagger |
-| [10-deployment](docs/10-deployment/README.md) | Docker, руководство администратора |
-| [11-user-guide](docs/11-user-guide/README.md) | Руководство пользователя |
-| [12-final-report](docs/12-final-report/README.md) | Техническая спецификация, записка |
+| Контекстная диаграмма IDEF0 | [context-diagram.md](docs/00-project-charter/context-diagram.md) |
+| BUC-диаграмма | [buc-diagram.md](docs/00-project-charter/buc-diagram.md) |
+| SWOT-анализ | [swot.md](docs/00-project-charter/swot.md) |
+| ROI — Анализ окупаемости | [roi.md](docs/00-project-charter/roi.md) |
+| Глоссарий | [glossary.md](docs/00-project-charter/glossary.md) |
+
+## 01 — Требования
+
+| Документ | Ссылка |
+|---|---|
+| Use Case диаграмма | [use-case-diagram.md](docs/01-requirements/use-case-diagram.md) |
+| Domain Model | [domain-model.md](docs/01-requirements/domain-model.md) |
+| Спецификации Use Case | [use-case-specifications.md](docs/01-requirements/use-case-specifications.md) |
+| Матрица трассировки требований | [traceability-matrix.md](docs/01-requirements/traceability-matrix.md) |
+
+## 02 — Архитектура
+
+| Документ | Ссылка |
+|---|---|
+| PCMEF-диаграмма | [pcmef-diagram.md](docs/02-architecture/pcmef-diagram.md) |
+| ADR — Архитектурные решения | [adr.md](docs/02-architecture/adr.md) |
+| Описание интерфейсов | [interfaces.md](docs/02-architecture/interfaces.md) |
+
+## 03 — База данных
+
+| Документ | Ссылка |
+|---|---|
+| ER-диаграмма | [er-diagram.md](docs/03-database/er-diagram.md) |
+| DDL-скрипт | [ddl.sql](docs/03-database/ddl.sql) |
+| ORM-маппинг (JPA / Hibernate) | [orm-mapping.md](docs/03-database/orm-mapping.md) |
+
+## 04 — Детальное проектирование
+
+| Документ | Ссылка |
+|---|---|
+| Sequence-диаграммы | [sequence-diagrams.md](docs/04-detailed-design/sequence-diagrams.md) |
+| Спецификация методов | [method-specs.md](docs/04-detailed-design/method-specs.md) |
+
+## 05 — Реализация
+
+| Документ | Ссылка |
+|---|---|
+| Структура кода и слои | [code-structure.md](docs/05-implementation/code-structure.md) |
+
+## 06 — Тестирование
+
+| Документ | Ссылка |
+|---|---|
+| Тест-план | [test-plan.md](docs/06-testing/test-plan.md) |
+| Тестирование REST API (Postman) | [postman.md](docs/06-testing/postman.md) |
+
+## 07 — Рефакторинг
+
+| Документ | Ссылка |
+|---|---|
+| Анализ «запахов кода» | [code-smells.md](docs/07-refactoring/code-smells.md) |
+| Паттерны Data Mapper / Identity Map | [README.md](docs/07-refactoring/README.md) |
+
+## 08 — Интерфейс
+
+| Документ | Ссылка |
+|---|---|
+| Скриншоты интерфейса | [screenshots.md](docs/08-ui/screenshots.md) |
+
+## 09 — API
+
+| Документ | Ссылка |
+|---|---|
+| OpenAPI / Swagger | [README.md](docs/09-api/README.md) |
+
+## 10 — Развёртывание
+
+| Документ | Ссылка |
+|---|---|
+| Руководство администратора | [admin-guide.md](docs/10-deployment/admin-guide.md) |
+| CI/CD пайплайн | [ci-cd.md](docs/10-deployment/ci-cd.md) |
+
+## 11 — Руководство пользователя
+
+| Документ | Ссылка |
+|---|---|
+| Руководство пользователя | [user-guide.md](docs/11-user-guide/user-guide.md) |
+
+## 12 — Итоговый отчёт
+
+| Документ | Ссылка |
+|---|---|
+| Техническая спецификация | [technical-specification.md](docs/12-final-report/technical-specification.md) |
+| Пояснительная записка (.docx) | [Пояснительная записка.docx](docs/12-final-report/Пояснительная%20записка.docx) |
+| Презентация (.pptx) | [Презентация к курсовому проекту.pptx](docs/12-final-report/Презентация%20к%20курсовому%20проекту.pptx) |
 
 ---
 

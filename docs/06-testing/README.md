@@ -2,9 +2,9 @@
 
 ## Содержание
 
-- Тест-план
-- Результаты JaCoCo (покрытие кода > 40%)
-- Коллекция Postman для REST API
+- [Тест-план](test-plan.md)
+- [Тестирование REST API через Postman](postman.md)
+- Результаты JaCoCo (покрытие кода > 40%): `mvn jacoco:report` → `target/site/jacoco/index.html`
 
 ## Инструменты
 

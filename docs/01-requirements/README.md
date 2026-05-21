@@ -5,6 +5,7 @@
 - [Use Case диаграмма](use-case-diagram.md)
 - [Domain Model](domain-model.md)
 - [Спецификации Use Case](use-case-specifications.md)
+- [Матрица трассировки требований](traceability-matrix.md)
 
 ## Функциональные требования
 
